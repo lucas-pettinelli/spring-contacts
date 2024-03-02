@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contatos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a th:href="@{/}">Meus Contatos</a></li>
+				<li><a th:href="@{/contatos}">Listar</a></li>
+				<li><a th:href="@{/contatos/novo}">Novo</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<br>
+			<h1>Lista de contatos</h1>
+			<br>
+		</section>
+
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Telefone</th>
+						<th>#</th>
+						<th>#</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr id="second-td" th:each="contato: ${contatos}">
+						<td id="first-td" th:text="${contato.nome}"></td>
+
+						<td th:text=" ${contato.telefone}"></td>
+
+						<td>
+							<a class="button-editar"
+								th:href="@{/contatos/{contato}/editar(contato=${contato.id})}">Editar</a>
+						</td>
+
+						<td>
+							<form th:action="@{/contatos/{contato}(contato=${contato.id})}" th:method="delete">
+								<button>Remover</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</section>
+
+	</main>
+	
+</body>
+
+</html>

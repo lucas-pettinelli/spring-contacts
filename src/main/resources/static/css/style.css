@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+header {
+	margin: 0;
+}
+
+header nav {
+	background: #3742fa;
+	height: 3em;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	list-style: none;
+	line-height: 3em;
+	float: left;
+}
+
+header nav ul li a {
+	font-size: large;
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	padding: 0 1em;
+	color: #FFFEFE;
+}
+
+nav a:hover {
+	color: #FFFEFE;
+	background-color: rgb(44, 53, 214);
+}
+
+header nav ul li:first-child a {
+	font-weight: bold;
+	font-size: 1.4em;
+	color: #ced6e0;
+}
+
+header nav ul li:first-child a:hover {
+	color: #ced6e0;
+}
+
+main {
+	padding: 0 1em;
+}
+
+main section form div {
+	margin: 0 0 10px 0;
+}
+
+main section form div label {
+	display: block;
+}
+
+main section form div input {
+	width: 20em;
+	padding: 5px;
+	text-transform: capitalize;
+}
+
+main section form div button {
+	border-radius: 4px;
+	border: none;
+	padding: 10px 15px;
+	background-color: #2ed573;
+	color: #ffffff;
+}
+
+main section form div button:hover {
+	background-color: rgb(35, 170, 91);
+	cursor: pointer;
+}
+
+main section table {
+	border-collapse: collapse;
+}
+
+main section table,
+main section table th,
+main section table td {
+	border: 1px solid #ced6e0;
+	padding: 10px 15px;
+
+}
+
+main section table tbody tr td a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+main section table tbody tr td a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+main section table tbody tr td form button {
+	border-radius: 4px;
+	border: none;
+	padding: 10px 15px;
+	background-color: #2ed573;
+	color: #ffffff;
+}
+
+main section table tbody tr td form button:hover {
+	background-color: rgb(35, 170, 91);
+	cursor: pointer;
+}
+
+tbody .button-editar {
+	border-radius: 4px;
+	text-decoration: none;
+	border: none;
+	padding: 10px 15px;
+	background-color: #1e90ff;
+	color: #FFFEFE;
+}
+
+tbody .button-editar:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: rgb(19, 118, 215);
+
+}
+
+section h1 {
+	margin-left: 8px;
+}
+
+.index-image {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.index-image img {
+	position: absolute;
+	top: 300px;
+	bottom: 0;
+	right: 0;
+	max-width: 100%;
+	height: auto;
+}
