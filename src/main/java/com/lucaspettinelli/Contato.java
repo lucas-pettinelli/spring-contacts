@@ -5,14 +5,15 @@ public class Contato {
 	private String nome;
 	private String telefone;
 
-	public Contato() {}
-	
+	public Contato() {
+	}
+
 	public Contato(String id, String nome, String telefone) {
 		this.id = id;
 		this.nome = nome;
 		this.telefone = telefone;
 	}
-	
+
 	public boolean isNovo() {
 		return id == null;
 	}

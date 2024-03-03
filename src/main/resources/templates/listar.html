@@ -39,10 +39,11 @@
 				</thead>
 
 				<tbody>
-					<tr id="second-td" th:each="contato: ${contatos}">
-						<td id="first-td" th:text="${contato.nome}"></td>
+					<tr th:each="contato: ${contatos}">
 
-						<td th:text=" ${contato.telefone}"></td>
+						<td th:text="${contato.nome}"></td>
+
+						<td th:text="${contato.telefone}"></td>
 
 						<td>
 							<a class="button-editar"
@@ -61,7 +62,7 @@
 		</section>
 
 	</main>
-	
+
 </body>
 
 </html>

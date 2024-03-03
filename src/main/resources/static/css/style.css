@@ -110,12 +110,12 @@ main section table tbody tr td form button {
 	border-radius: 4px;
 	border: none;
 	padding: 10px 15px;
-	background-color: #2ed573;
+	background-color: #ff6b81;
 	color: #ffffff;
 }
 
 main section table tbody tr td form button:hover {
-	background-color: rgb(35, 170, 91);
+	background-color: #ff4757;
 	cursor: pointer;
 }
 
@@ -124,14 +124,14 @@ tbody .button-editar {
 	text-decoration: none;
 	border: none;
 	padding: 10px 15px;
-	background-color: #1e90ff;
+	background-color: #ffa502;
 	color: #FFFEFE;
 }
 
 tbody .button-editar:hover {
 	color: #fff;
 	text-decoration: none;
-	background-color: rgb(19, 118, 215);
+	background-color: #ff7f50;
 
 }
 
